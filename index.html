@@ -1,50 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scientific Calculator</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
     <div class="calculator">
-        <div class="screen">00</div>
-        <div class="buttons">
-         
-            <button class="btn func">CE</button>
-            <button class="btn func">X!</button>
-            <button class="btn func">(</button>
-            <button class="btn func">)</button>
-            <button class="btn func">%</button>
-            <button class="btn func">AC</button>
-            <button class="btn func">sin</button>
-            <button class="btn func">π</button>
-            <button class="btn num">7</button>
-            <button class="btn num">8</button>
-            <button class="btn num">9</button>
-            <button class="btn sign">÷</button>
-            <button class="btn func">cos</button>
-            <button class="btn func">log</button>
-            <button class="btn num">4</button>
-            <button class="btn num">5</button>
-            <button class="btn num">6</button>
-            <button class="btn sign">x</button>
-            <button class="btn func">tan</button>
-            <button class="btn func">√</button>
-            <button class="btn num">1</button>
-            <button class="btn num">2</button>
-            <button class="btn num">3</button>
-            <button class="btn sign">-</button>
-            <button class="btn func">e</button>
-            <button class="btn func">X<sup>Y</sup></button>
-            <button class="btn num">0</button>
-            <button class="btn sign">.</button>
-            <button class="btn sign">=</button>
-            <button class="btn sign">+</button>
-
-
-            
-        </div>
+      <input class="screen" readonly>
+      <div class="buttons">
+        <button class="btn func" onclick="toDelete()">CE</button>
+        <button class="btn func" onclick="toFactorial()">X!</button>
+        <button class="btn func" onclick="toDisplay('(')">(</button>
+        <button class="btn func" onclick="toDisplay(')')">)</button>
+        <button class="btn func" onclick="toDisplay('%')">%</button>
+        <button class="btn func" onclick="clearDisplay()">AC</button>
+        <button class="btn func" onclick="sinus()">sin</button>
+        <button class="btn func" onclick="pi()">π</button>
+        <button class="btn num" onclick="toDisplay('7')">7</button>
+        <button class="btn num" onclick="toDisplay('8')">8</button>
+        <button class="btn num" onclick="toDisplay('9')">9</button>
+        <button class="btn sign" onclick="toDisplay('÷')">÷</button>
+        <button class="btn func" onclick="cosine()">cos</button>
+        <button class="btn func" onclick="log()">log</button>
+        <button class="btn num" onclick="toDisplay('4')">4</button>
+        <button class="btn num" onclick="toDisplay('5')">5</button>
+        <button class="btn num" onclick="toDisplay('6')">6</button>
+        <button class="btn sign" onclick="toDisplay('x')">x</button>
+        <button class="btn func" onclick="tangent()">tan</button>
+        <button class="btn func" onclick="squareRoot()">√</button>
+        <button class="btn num" onclick="toDisplay('1')">1</button>
+        <button class="btn num" onclick="toDisplay('2')">2</button>
+        <button class="btn num" onclick="toDisplay('3')">3</button>
+        <button class="btn sign" onclick="toDisplay('-')">-</button>
+        <button class="btn func" onclick="exponentX()">e</button>
+        <button class="btn func" onclick="oneOverX('^')">1/X</button>
+        <button class="btn num" onclick="toDisplay('0')">0</button>
+        <button class="btn sign" onclick="toDisplay('.')">.</button>
+        <button class="btn sign" onclick="calculate()">=</button>
+        <button class="btn sign" onclick="toDisplay('+')">+</button>
+      </div>
     </div>
-</body>
+  </body><script src="/script.js"></script>
 </html>
